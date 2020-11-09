@@ -1,0 +1,13 @@
+version: '3'
+services:
+  city_app:
+    build: .
+    volumes: 
+      - city_data:/project
+    ports: 
+      - "8003:8003"
+    restart: always
+
+volumes:
+  city_data: {}
+  
